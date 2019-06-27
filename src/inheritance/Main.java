@@ -3,7 +3,7 @@ package inheritance;
 public class Main {
     public static void main(String[] args){
 
-        Product p = new Product("01589", "Book", .50);
+        Product p = new Product("01589", "Book", 26.59);
         System.out.println(p.toString());
         Book b = new Book();
         Software s = new Software();

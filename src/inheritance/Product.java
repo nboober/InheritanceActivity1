@@ -1,5 +1,7 @@
 package inheritance;
 
+import java.text.NumberFormat;
+
 public class Product {
 
     private String code = "";
@@ -28,7 +30,7 @@ public class Product {
 
     private String getFormattedPrice(double price) {
         // Use the NumberFormat class to format the price to 2 decimal places
-        return String.format("#.00", price);
+        return NumberFormat.getCurrencyInstance().format(price);
     }
 
     // Create public access for the count variable
